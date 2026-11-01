@@ -1,0 +1,11 @@
+Model,Özellikler,R2_test,RMSE_test,MAE_test
+GB,Yalnız hava,0.535,4.864,3.744
+XGBoost,Yalnız hava,0.533,4.879,3.652
+KNN,Yalnız hava,0.470,5.196,3.849
+LightGBM,Yalnız hava,0.553,4.773,3.610
+CatBoost,Yalnız hava,0.551,4.781,3.605
+GB,Hava + Saat + Ay,0.625,4.367,3.208
+XGBoost,Hava + Saat + Ay,0.639,4.287,2.979
+KNN,Hava + Saat + Ay,0.572,4.668,3.215
+LightGBM,Hava + Saat + Ay,0.653,4.201,2.956
+CatBoost,Hava + Saat + Ay,0.662,4.151,2.899
