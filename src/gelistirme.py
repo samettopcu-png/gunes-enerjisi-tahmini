@@ -3,6 +3,7 @@
 Çıktı: sonuclar/gelistirme_5_model.csv ve modeller/catboost_hava_saat_ay.pkl
 """
 import argparse
+from pathlib import Path
 import joblib
 import pandas as pd
 from src.ortak import HEDEF, HAVA, EK, veri_yukle, olc, modeller
@@ -11,6 +12,7 @@ KUMELER = {'Yalnız hava': HAVA, 'Hava + Saat + Ay': HAVA + EK}
 
 
 def main(veri):
+    Path('modeller').mkdir(exist_ok=True); Path('sonuclar').mkdir(exist_ok=True)
     train, test = veri_yukle(veri)
     satirlar = []
     for kume_ad, kol in KUMELER.items():
